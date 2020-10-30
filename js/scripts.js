@@ -1,25 +1,27 @@
 //business Logic//
-  // const array = [0, 1, 2, 3, 4, 5];
+
+const array = [1, 2, 3, 4, 5];
+const beep ="Beep!";
+const boop ="Boop!";
+const wontYou ="Won't you be my neighbor?";
 
 
+
+// tried to use for.Each method//
 
 function mrRoboger(userInput) {
-  let userInputStr = parseInt(userInputStr);
   let newArray =[];
-  for (let i = 0; i <= userInput; i += 1); {
-    newArray.push(i.toString());
+  array.forEach(function(userInput) {
+    newArray.push(userInput)
   }
-}
 
 
+// using for method//
+//   for(let i = 0; i <= userInput; i += 1); {
+//     newArray.push(i);
+//   }
+// }
 
-
-
-// let mrRoboger = function (inputNumber) {
-//   let newArray = [];
-//   for (let i = 0; index <=inputNumber; i += 1) {
-//     inputNumber.push(i.toString());
-//   };
 
 //     if (inputNumber.includes(1)) {
 //       newArray.push("Beep!");

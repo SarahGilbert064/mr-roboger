@@ -16,6 +16,8 @@ h1 {
 
 .container {
   text-align: center;
+  font-weight: bolder;
+  color: white;
 }
 
 .btn {

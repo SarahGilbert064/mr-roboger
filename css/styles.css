@@ -10,7 +10,13 @@ h1 {
   border-style: ridge;
 }
 
+.form-group {
+  text-align: center;
+}
 
+.container {
+  text-align: center;
+}
 
 .btn {
   display: inline-block;

@@ -1,12 +1,22 @@
 //business Logic//
+  // const array = [0, 1, 2, 3, 4, 5];
+
+
+
+function mrRoboger(userInputStr) {
+  let userInputStr = parseInt(userInputStr);
+  let newArray =[];
+  for (let i = 0; index <= )
+}
+
+
 
 
 let mrRoboger = function (inputNumber) {
-  // const array = [0, 1, 2, 3, 4, 5];
   let newArray = [];
   for (let i = 0; index <=inputNumber; i += 1) {
-
-    // alert(inputNumber);
+    inputNumber.push(i.toString());
+  };
 
     if (inputNumber.includes(1)) {
       newArray.push("Beep!");
@@ -20,7 +30,7 @@ let mrRoboger = function (inputNumber) {
   };
 };
 
-
+  
 //UI Logic//
 
 $(document).ready(function() {

@@ -26,7 +26,6 @@ $(document).ready(function() {
 
     let inputStr = $("input#number").val();
     let newNum = mrRobo(inputStr);
-    console.log(newNum);
     
     $("#result").show(newNum);
     $("#outputNumber").text(newNum);

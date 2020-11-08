@@ -11,20 +11,23 @@
 
 ## Specifications
 
-#### Describe: mrRoboger
-Test: Program gathers input from user.
+#### Describe: mrRobo
+Test: Function gathers input from user.
 Expect: (input("hello").toEqual(["hello"])
 
-Test: Program takes any numerical input that contains a 1 and replaces it with "Beep!".
-Expect: (input(1).toEqual(["Beep!"])
+Test: Function will push index through loop starting with 1 and ending on the inputted value.
+Expect: (input(3).toEqual(["1", "2", "3"])
 
-Test: Program takes any numerical input that contains a 2 and replaces it with "Boop!".
-Expect (input(2).toEqual(["Boop!"])
-
-Test: Program takes any numerical input that contains a 3 and replaces it with "Won't you be my neighbor?".
+Test: Function will take the index that contains a 3 and replace it with the string "Won't you be my neighbor?".
 Expect: (input(3).toEqual(["Won't you be my neighbor?"])
 
-Test: If user inputs any number that does not contain 1, 2, or 3, the program will display the array of values ending at that number.
+Test: Function will take the index that contains a 2 and replaces it with the string "Boop!".
+Expect (input(2).toEqual(["Boop!"])
+
+Test: Function will take the index that contains a 1 and replace it with the string "Beep!".
+Expect: (input(1).toEqual(["Beep!"])
+
+Test: Function will push index into empty array if it does not contain any of the values listed above.
 Expect: (input(5).toEqual(["0", "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5])
 
 ## Setup Instruction

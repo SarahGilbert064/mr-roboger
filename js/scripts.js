@@ -1,52 +1,33 @@
 //business Logic//
 
-const array = [1, 2, 3, 4, 5];
-const beep ="Beep!";
-const boop ="Boop!";
-const wontYou ="Won't you be my neighbor?";
 
-
-
-// tried to use for.Each method//
-
-function mrRoboger(userInput) {
-  let newArray =[];
-  array.forEach(function(userInput) {
-    newArray.push(userInput)
+function mrRobo(num) {
+  let array = [];
+  for(let i = 1; i <= num; i++) {
+    array.push(i);
   }
+// console.log(array);
+};
 
 
-// using for method//
-//   for(let i = 0; i <= userInput; i += 1); {
-//     newArray.push(i);
-//   }
-// }
+
+// let newArry = numbers.map(function(number)
+
+  //must have return statemenet or .map will not work//
 
 
-//     if (inputNumber.includes(1)) {
-//       newArray.push("Beep!");
-//     } else if (inputNumber.includes(2)) {
-//       newArray.push("Boop!");
-//     } else if (inputNumber.includes(3)) {
-//       newArray.push("Won't you be my neightbor?");
-//     } else {
-//       newArray.push(array);
-//     }
-//   };
-// };
 
-  
-//User Interface Logic//
+// $(document).ready(function() {
+//   $("form#mrRoboger").submit(function(event) {
+//     event.preventDefault();
 
-$(document).ready(function() {
-  $("input#number").submit(function(event) {
-    event.preventDefault();
+//     const inputString = $("input#number").val();
+//     const inputNumber = parseInt(inputString);
 
-    const inputString = $("input#number").val();
-    const inputNumber = parseInt(inputString);
+//     mrRoboger(inputNumber);
+    
+//       $("#result").show();
+//       $("#outputNumber").text(result);
 
-      $("#result").show();
-      $("#outputNumber").text(result);
-
-  });
-});
+//   });
+// });

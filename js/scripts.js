@@ -14,27 +14,22 @@ function mrRobo(num) {
       array.push(i);
     }
   }
+  return array.join(", ");
 };  
 
 
+// User Interface Logic
 
-// let newArry = numbers.map(function(number)
+$(document).ready(function() {
+  $("form#mrRoboger").submit(function(event) {
+    event.preventDefault();
 
-  //must have return statemenet or .map will not work//
-
-
-
-// $(document).ready(function() {
-//   $("form#mrRoboger").submit(function(event) {
-//     event.preventDefault();
-
-//     const inputString = $("input#number").val();
-//     const inputNumber = parseInt(inputString);
-
-//     mrRoboger(inputNumber);
+    let inputStr = $("input#number").val();
+    let newNum = mrRobo(inputStr);
+    console.log(newNum);
     
-//       $("#result").show();
-//       $("#outputNumber").text(result);
+    $("#result").show(newNum);
+    $("#outputNumber").text(newNum);
 
-//   });
-// });
+  });
+});
